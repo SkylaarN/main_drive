@@ -13,7 +13,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-// import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +34,6 @@ const AuthForm = ({ type }: { type: FormType }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-
   const formSchema = authFormSchema(type);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -48,8 +47,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
     setIsLoading(true);
     setErrorMessage("");
     console.log(values);
-      setIsLoading(false);
-   
+    setIsLoading(false);
   };
 
   return (
@@ -69,11 +67,11 @@ const AuthForm = ({ type }: { type: FormType }) => {
                     <FormLabel className="shad-form-label">Full Name</FormLabel>
 
                     <FormControl>
-                      {/* <Input
+                      <Input
                         placeholder="Enter your full name"
                         className="shad-input"
                         {...field}
-                      /> */}
+                      />
                     </FormControl>
                   </div>
 
@@ -92,11 +90,11 @@ const AuthForm = ({ type }: { type: FormType }) => {
                   <FormLabel className="shad-form-label">Email</FormLabel>
 
                   <FormControl>
-                    {/* <Input
+                    <Input
                       placeholder="Enter your email"
                       className="shad-input"
                       {...field}
-                    /> */}
+                    />
                   </FormControl>
                 </div>
 
@@ -141,8 +139,6 @@ const AuthForm = ({ type }: { type: FormType }) => {
           </div>
         </form>
       </Form>
-
-      
     </>
   );
 };
