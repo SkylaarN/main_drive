@@ -90,7 +90,7 @@ npm install --legacy-peer-deps
 
 Note: The --legacy-peer-deps flag is used to bypass issues that might occur with certain peer dependencies.
 
-Running the Project
+Running the Project 
 
 After successfully installing the dependencies, you can run the project locally:
 1. Start the Development Server
