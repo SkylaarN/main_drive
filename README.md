@@ -108,6 +108,7 @@ If you encounter any issues during setup or while running the project, here are 
 
 If you experience issues during npm install, try using the --legacy-peer-deps flag:
 ```bash
+
 npm install --legacy-peer-deps
 ```
 
