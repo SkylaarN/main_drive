@@ -68,6 +68,11 @@ const AuthForm = ({ type }: { type: FormType }) => {
     <>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="auth-form">
+            <div className="bg-blue-500 text-white p-4 rounded-lg">
+  not working!
+</div>
+
+
           <h1 className="form-title">
             {type === "sign-in" ? "Sign In" : "Sign Up"}
           </h1>

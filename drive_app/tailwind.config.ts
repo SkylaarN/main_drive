@@ -10,8 +10,8 @@ const config = {
     extend: {
       colors: {
         brand: {
-          100: "#EA6365",
-          DEFAULT: "#FA7275",
+          100: "#3DD9B3",
+          DEFAULT: "#3DD9B3",
         },
         red: "#FF7474",
         error: "#b80000",
@@ -29,45 +29,35 @@ const config = {
           100: "#04050C",
           200: "#131524",
         },
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#1C1C1E",
+          foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#E5E5E5",
+          foreground: "#1C1C1E",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#F5F5F5",
+          foreground: "#737373",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#F5F5F5",
+          foreground: "#1C1C1E",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "#FF3333",
+          foreground: "#FFFFFF",
         },
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        border: "#E5E7EB",
+        input: "#E5E7EB",
+        ring: "#1C1C1E",
         chart: {
-          1: "hsl(var(--chart-1))",
-          2: "hsl(var(--chart-2))",
-          3: "hsl(var(--chart-3))",
-          4: "hsl(var(--chart-4))",
-          5: "hsl(var(--chart-5))",
+          1: "#FFB86C",
+          2: "#3DD9B3",
+          3: "#1E3A8A",
+          4: "#F59E0B",
+          5: "#F43F5E",
         },
       },
       fontFamily: {
@@ -79,18 +69,14 @@ const config = {
         "drop-3": "0 8px 30px 0 rgba(65, 89, 214, 0.1)",
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "1rem",
+        md: "0.75rem",
+        sm: "0.5rem",
       },
       keyframes: {
         "caret-blink": {
-          "0%,70%,100%": {
-            opacity: "1",
-          },
-          "20%,50%": {
-            opacity: "0",
-          },
+          "0%,70%,100%": { opacity: "1" },
+          "20%,50%": { opacity: "0" },
         },
       },
       animation: {
@@ -98,7 +84,6 @@ const config = {
       },
     },
   },
-  // plugins: [require('tailwindcss-animate')],
 };
 
 module.exports = config;

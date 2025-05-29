@@ -64,7 +64,7 @@ const router = useRouter();
 
       </AlertDialogTitle>
       <AlertDialogDescription
-      className="subtitle-2 text-center text-light-100"
+      className="subtitle-2 text-center text-light-100 bg-white"
       >
        OTP has been sent to <span className="pl-1 text-brand" >{email}</span>
       </AlertDialogDescription>
